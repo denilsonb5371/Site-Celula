@@ -1,5 +1,8 @@
 $(function(){
     $('.mobile-menu').click(function(){
-    $('.mobile-menu').find('ul').slidetoggle();
+   
+    $('.mobile-menu').find('ul').slideToggle();
+    
+  
     })
 });

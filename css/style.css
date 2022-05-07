@@ -44,12 +44,11 @@ nav.mobile-menu{
 }
 
 nav.mobile-menu:hover ul{
-	opacity: 1;
+	
 }
 
 nav.mobile-menu ul{
-	opacity: 0;
-	transition: 1s;
+	display: none;
 	background-color: white;
 	position: absolute;
 	width: 100%;
@@ -242,11 +241,11 @@ header{
 }
 
 nav.desktop-menu{
-	display:none;
+display: none;
 }
 
 nav.mobile-menu{
-	display: block;
+ display: block;
 }
 
 
