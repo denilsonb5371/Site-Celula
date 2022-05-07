@@ -36,7 +36,7 @@ header nav{
 
 nav.mobile-menu{
 	cursor: pointer;
-	
+	display: none;
 	width: 32px;
 	height: 32px;
 	background-image: url('../imagens/menu.png');
@@ -44,11 +44,11 @@ nav.mobile-menu{
 }
 
 nav.mobile-menu:hover ul{
-	display: block;
+	opacity: 1;
 }
 
 nav.mobile-menu ul{
-	display: none;
+	opacity: 0;
 	transition: 1s;
 	background-color: white;
 	position: absolute;
@@ -61,15 +61,18 @@ nav.mobile-menu ul{
 
 nav.mobile-menu ul li{
 	padding:8px 0;
+	transition: 0.4s;
 	border-bottom: 1px solid black;
 }
 
-
-nav.mobile-menu ul li a{
-	color: rgb(0, 0, 0);
-	text-decoration: none;
+nav.mobile-menu ul li:hover{
+	background-color: rgb(230,230,230);
 }
 
+nav.mobile-menu ul li a{
+	color: black;
+	text-decoration: none;
+}
 
 header .logo{
 	float: left;
@@ -95,12 +98,12 @@ header nav.desktop-menu li a{
 .chamada1{
 	max-width: 600px;
 	float: right;
-	margin:50px 30px;
+	margin:200px 150px;
 }
 
 .chamada1 h2{
 	font-weight: 300;
-	font-size: 30px;
+	font-size: 40px;
 	color: white;
 }
 
